@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { HttpClient } from "@angular/common/http";
+import { ColDef } from 'ag-grid-community';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'javaDocker';
+  rowData:any[]=[];
+
+  colDeft: ColDef[]=[
+    {field:'make'},
+    {field: 'model'},
+    {field:'price'}
+  ]
 }
