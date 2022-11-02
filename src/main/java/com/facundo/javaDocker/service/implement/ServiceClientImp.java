@@ -4,9 +4,10 @@ import com.facundo.javaDocker.models.Client;
 import com.facundo.javaDocker.repositories.ClientRepository;
 import com.facundo.javaDocker.service.ClientService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
-
+@Service
 public class ServiceClientImp implements ClientService {
 
     @Autowired
